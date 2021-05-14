@@ -51,12 +51,26 @@
         </div>
     </nav>
 
-    <header class="vh-100"
+    <header class="vh-100 text-center"
         style="background: url(../static/assets/img/background_header.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
-
+        <br><br><br><br><br><br>
+        <img src="../static/assets/img/music.png" alt="" width="140" height="140">
+        <h1 style="font-size: 350%; font-weight: 700;" class="text-white text-center">Soundlogy</h1>
+        <h1 id="typewriter" style="font-size: 200%; font-weight: 700; color: #00E1D6 !important;"
+            class="text-white text-center"></h1>
+        <br><br>
+        <button class="get_started_button">Get Started</button>
     </header>
-    <div class="vh-100">
-
+    <div class="vh-100 container pt-5">
+        <h1 class="text-center">Genre Detection</h1>
+        <form class="pt-5">
+            <div class="mb-3">
+                <label for="song" class="form-label">Upload .au file</label><br>
+                Convert your .mp3 file to .au <a href="https://convertio.co/mp3-au/">here</a>
+                <input type="file" class="form-control" id="song" name="song" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
     <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry"
             title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/"

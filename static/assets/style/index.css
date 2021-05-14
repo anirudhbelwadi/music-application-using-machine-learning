@@ -21,3 +21,16 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  .get_started_button{
+      outline: none;
+      border: #00BFE3 1px solid;
+      background: transparent;
+      padding: 10px 25px;
+      color: #00E1D6;
+      font-size: 150%;
+  }
+  .get_started_button:hover{
+      background: #00768d;
+      transition: 0.3s;
+      color: white;
+  }
