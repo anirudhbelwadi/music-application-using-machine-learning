@@ -44,7 +44,7 @@
                         <a class="nav-link" style="font-size: 130%;" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-size: 130%;" href="#">Get Started</a>
+                        <a class="nav-link active" style="font-size: 130%;" href="#detection">Get Started</a>
                     </li>
                 </ul>
             </div>
@@ -61,20 +61,24 @@
         <br><br>
         <button class="get_started_button">Get Started</button>
     </header>
-    <div class="vh-100 container pt-5">
-        <h1 class="text-center">Genre Detection</h1>
-        <form class="pt-5">
+    <div class="vh-100 container pt-5" id="detection">
+        <h1 class="text-center mt-5">Genre Detection</h1>
+        <form class="pt-2" action="" method="POST">
             <div class="mb-3">
-                <label for="song" class="form-label">Upload .au file</label><br>
-                Convert your .mp3 file to .au <a href="https://convertio.co/mp3-au/">here</a>
-                <input type="file" class="form-control" id="song" name="song" aria-describedby="emailHelp">
+                <label for="song" class="form-label"><strong>Upload .au file</strong></label>
+                <small>(Convert your .mp3 file to .au <a href="https://convertio.co/mp3-au/"
+                        target="_blank">here</a>)</small>
+                <input type="file" accept=".au" class="form-control mt-1" id="song" name="song"
+                    aria-describedby="emailHelp">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Detect</button>
         </form>
     </div>
-    <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry"
-            title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/"
-            title="Flaticon">www.flaticon.com</a></div>
+    <div style="display: none;">
+        Icons made by<a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
