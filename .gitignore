@@ -2,3 +2,5 @@ cnn.py
 uploads/*
 genres/*
 op.json
+mlpgenre.py
+gen/*
