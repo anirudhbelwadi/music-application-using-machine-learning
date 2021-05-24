@@ -11,6 +11,11 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+#Team Route
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
 @app.route('/detect', methods=['POST'])
 def detect():
     #File Input
