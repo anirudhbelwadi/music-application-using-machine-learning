@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
         style="background-color: rgba(0, 0, 0, 0.555) !important;">
         <div class="container-fluid">
-            <a class="navbar-brand text-white align-items-center d-flex" href="#">
+            <a class="navbar-brand text-white align-items-center d-flex" href="/">
                 <img src="../static/assets/img/music.png" alt="" width="30" height="30"
                     class="d-inline-block align-text-top me-2">
                 <span style="font-size: 125%; font-weight: 700;">Soundlogy</span>
@@ -42,6 +42,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="font-size: 130%;" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 130%;" href="/summary">Model Summary</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" style="font-size: 130%;" href="#detection">Get Started</a>
@@ -61,9 +64,9 @@
         <br><br>
         <button class="get_started_button">Get Started</button>
     </header>
-    <div class="vh-100 container pt-5" id="detection">
+    <div class="container pt-5" id="detection">
         <h1 class="text-center mt-5">Genre Detection</h1>
-        <form class="pt-2" action="/detectgenre" method="POST" enctype="multipart/form-data">
+        <form class="pt-2" action="/detect" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="song" class="form-label"><strong>Upload .au file</strong></label>
                 <small>(Convert your .mp3 file to .au <a href="https://convertio.co/mp3-au/"
