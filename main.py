@@ -1,7 +1,7 @@
 #import Flask Framework
 from flask import *
 from detect_cnn import *
-
+import tensorflow.keras as keras
 
 #Initialize Flask app
 app = Flask(__name__)
@@ -22,7 +22,7 @@ def detect():
     
     genre = detect_genre_cnn()
     print(genre)
-    return genre
+    return render_template('detect.html', genre=genre)
 
 @app.route('/summary')
 def summary():
