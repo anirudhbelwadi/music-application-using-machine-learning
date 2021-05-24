@@ -1,0 +1,6 @@
+numpy
+sklearn
+tensorflow
+matplotlib
+librosa
+flask
