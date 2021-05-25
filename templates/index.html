@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
         style="background-color: rgba(0, 0, 0, 0.555) !important;">
         <div class="container-fluid">
-            <a class="navbar-brand text-white align-items-center d-flex" href="/">
+            <a class="navbar-brand text-white align-items-center d-flex" href="#header">
                 <img src="../static/assets/img/music.png" alt="" width="30" height="30"
                     class="d-inline-block align-text-top me-2">
                 <span style="font-size: 125%; font-weight: 700;">Soundlogy</span>
@@ -41,7 +41,7 @@
                         <a class="nav-link" style="font-size: 130%;" aria-current="page" href="/team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-size: 130%;" href="#">Contact</a>
+                        <a class="nav-link" style="font-size: 130%;" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="font-size: 130%;" href="/summary">Model Summary</a>
@@ -54,7 +54,7 @@
         </div>
     </nav>
 
-    <header class="vh-100 text-center"
+    <header class="vh-100 text-center" id="header"
         style="background: url(../static/assets/img/background_header.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
         <br><br><br><br><br><br>
         <img src="../static/assets/img/music.png" alt="" width="140" height="140">
@@ -62,21 +62,28 @@
         <h1 id="typewriter" style="font-size: 200%; font-weight: 700; color: #00E1D6 !important;"
             class="text-white text-center"></h1>
         <br><br>
-        <button class="get_started_button">Get Started</button>
+        <a class="get_started_button" href="#detection">Get Started</a>
     </header>
-    <div class="container pt-5 vh-100" id="detection">
-        <h1 class="text-center mt-5">Genre Detection</h1>
-        <form class="pt-2" action="/detect" method="POST" enctype="multipart/form-data">
-            <div class="mb-3">
-                <label for="song" class="form-label"><strong>Upload .au file</strong></label>
-                <small>(Convert your .mp3 file to .au <a href="https://convertio.co/mp3-au/"
-                        target="_blank">here</a>)</small>
-                <input type="file" accept=".au" class="form-control mt-1" id="song" name="song"
-                    aria-describedby="emailHelp">
-            </div>
-            <button type="submit" class="btn btn-primary">Detect</button>
-        </form>
+    <div class="text-white"
+        style="background: url(../static/assets/img/background_detetction.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+        <div class="container pt-5 vh-100" id="detection">
+            <h1 class="text-center mt-5">Genre Detection</h1>
+            <form class="pt-2" action="/detect" method="POST" enctype="multipart/form-data">
+                <div class="form-group mb-3">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="song" class="form-label">Upload .au file</label>
+                    <small>(Convert your .mp3 file to .au <a href="https://convertio.co/mp3-au/"
+                            target="_blank">here</a>)</small>
+                    <input type="file" accept=".au" class="form-control mt-1" id="song" name="song" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Detect</button>
+            </form>
+        </div>
     </div>
+
     <div style="display: none;">
         Icons made by<a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from
         <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>

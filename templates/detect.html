@@ -43,20 +43,21 @@
                         <a class="nav-link" style="font-size: 130%;" href="/summary">Model Summary</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-size: 130%;" href="#detection">Get Started</a>
+                        <a class="nav-link active" style="font-size: 130%;" href="/#detection">Get Started</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="text-center vh-100 bg-dark text-white pt-5">
-        <hr>
+    <section class="text-center bg-dark text-white pt-5" style="min-height: 100vh;">
+        <br>
         <h3 class="mt-3">The detected Genre is</h3>
         <h1>{{ genre }}</h1>
         <img id="musicGenre" alt="" height="400">
         <br><br><br>
         <a href="/#detection">Detetect another</a>
+        <br><br>
     </section>
 
     <div style="display: none;">
@@ -72,9 +73,9 @@
         integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
         crossorigin="anonymous"></script>
 
-        <script>
-            document.getElementById("musicGenre").src= "../static/assets/img/genres/"+"{{genre}}"+".jpg";
-        </script>
+    <script>
+        document.getElementById("musicGenre").src = "../static/assets/img/genres/" + "{{genre}}" + ".jpg";
+    </script>
 
 </body>
 

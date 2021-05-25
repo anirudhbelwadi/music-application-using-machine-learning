@@ -1,6 +1,6 @@
-numpy
+flask
+numpy==1.18.5
 sklearn
 tensorflow
 matplotlib
 librosa
-flask

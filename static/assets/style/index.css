@@ -25,9 +25,10 @@
       outline: none;
       border: #00BFE3 1px solid;
       background: transparent;
-      padding: 10px 25px;
+      padding: 15px 30px;
       color: #00E1D6;
       font-size: 150%;
+      text-decoration: none;
   }
   .get_started_button:hover{
       background: #00768d;
