@@ -4,3 +4,4 @@ sklearn
 tensorflow
 matplotlib
 librosa
+Werkzeug
