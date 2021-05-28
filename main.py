@@ -9,15 +9,16 @@ import tensorflow.keras as keras
 app = Flask(__name__)
 
 #Root Route
-
-
 @app.route('/')
 def home():
     return render_template('index.html')
 
+#Login Route
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
 #Team Route
-
-
 @app.route('/team')
 def team():
     return render_template('team.html')
@@ -101,4 +102,4 @@ def summary():
 
 #Run Flask app when the python file is ran
 if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=True)
