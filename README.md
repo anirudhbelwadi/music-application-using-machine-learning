@@ -15,7 +15,7 @@
 <br>
 <code>source env\Scripts\activate</code> (for Windows)
 
-- Install the required packages using the following commands:
+- Change the control to the cloned repository in the terminal/command prompt and install the required packages using the following commands:
 
 <code>
 pip install -r requirements.txt
