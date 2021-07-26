@@ -2,6 +2,7 @@
 
 - This is a project we developed as a mini project in our Semester 6 of B.E. Computer Engineering.
 - Clone the project with the following command:
+
 <code>git clone https://github.com/anirudhbelwadi/music-application-using-machine-learning.git</code>
 
 - Create a virtual environment for the project using the following command:
