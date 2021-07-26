@@ -18,6 +18,12 @@
 - Install the required packages using the following commands:
 
 <code>
+pip install -r requirements.txt
+</code>
+<br>
+OR to install single packages:
+
+<code>
 pip install flask
 </code>
 <br>
