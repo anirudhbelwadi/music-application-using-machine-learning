@@ -40,6 +40,7 @@ pip install matplotlib
 <code>
 pip install librosa
 </code>
+<br>
 
 - Run the application using the following command:
 
