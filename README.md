@@ -15,7 +15,7 @@
 <br>
 <code>source env\Scripts\activate</code> (for Windows)
 
-- Install the required packages using the following command:
+- Install the required packages using the following commands:
 
 <code>
 pip install flask
