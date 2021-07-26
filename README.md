@@ -20,9 +20,9 @@
 <code>
 pip install -r requirements.txt
 </code>
-<br>
+<br><br>
 OR to install single packages:
-
+<br>
 <code>
 pip install flask
 </code>
